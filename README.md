@@ -12,19 +12,19 @@
 Simple docker  container for django in wsgi
 
 
-# Building
+## Building
 
 ```
 docker build -t django_image .
 ```
 
-# Running
+## Running
 
 ```
 docker run -d -v /local/path/to/app:/var/www/html/client -v /var/log/docks/django:/var/log/httpd -p 80:80 --name web django_image
 ```
 
-# Sample apache proxing
+## Sample apache proxing
 
 ```
 <VirtualHost *:80>
